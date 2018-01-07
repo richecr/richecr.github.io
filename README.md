@@ -1,3 +1,3 @@
 # MeuSite
 
-LINK para o site: http://rich-com-br.umbler.net/
+LINK para o site: https://richcombr.000webhostapp.com/
