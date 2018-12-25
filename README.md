@@ -1,8 +1,8 @@
 # MeuSite
 
-**Links para o site: https://rickecr.github.io./ **
+## Links para o site: https://rickecr.github.io./
 
 Ou
 
-**LINK para o site: https://richcombr.000webhostapp.com/ **
+## LINK para o site: https://richcombr.000webhostapp.com/
 
