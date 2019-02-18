@@ -4,6 +4,11 @@ GERAL
 body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	color: #4d4d4d;
+	transition: margin-left .5s;
+    transition-property: margin-left;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
 h1, h2, h3 {
@@ -24,49 +29,47 @@ h1, h2, h3 {
 /*
 NAVEGAÇÂO
 */
-nav{
-	/* flex-direction => Para ordenar os itens.
-	   align-items=> ordenação dos itens
-	*/
-	display: flex;
-	flex-direction: column;
-	align-items: center;;
-	background-color: #4d4d4d;
+
+#nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333652;
+    overflow-x: hidden;
+    padding-top: 60px;
+	transition: 0.5s;
+	transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
-nav > a {
-	/*Tira o sublinado dos links*/
-	text-decoration: none;
-	color:  #f1f1f1;
-	font-weight: 700;
-	font-size: 28px;
-	font-family: Pacifico, Helvetica, Arial, sans-serif;
+#nav .btnFechar {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
-nav ul {
-	/*list-style=> Para tirar as bolinhas dos links.*/
-	list-style: none;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
+#nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #90ADC6;
+    display: block;
+    transition: 0.3s;
 }
 
-/*Seleciona cada item da lista. */
-nav ul li {
-	text-align: center;;
-	width: 100%;
-}
-
-/*Seleciona os links de cada item da lista. */
-nav ul li a {
-	/*Campo inteiro clicavel*/
-	display: inline-block;
-	padding: 10px 0;
-	width: 100%;
-	text-decoration: none;
-	color: #f1f1f1;
+#navButton {
+	padding: 10px;
+	font-size: 36px;
+    cursor: pointer;
+    color: white;
+    position: fixed;
 }
 
 /*
@@ -86,8 +89,14 @@ header {
 	padding: 20px;
 }
 
-header p {
-	margin-bottom: 2em;
+header a {
+	padding: 10px;
+	color: cyan;
+    transition: all 0.3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
 /*
@@ -115,22 +124,52 @@ SOBRE
 }
 
 /*
-SERVIÇOS
+INFORMAÇÕES
 */
 
-#servicos {
-	padding: 20px;
+#informacoes {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	background-color: #373B44;
+	border: 1px solid #ccc;
 }
 
-#servicos div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	margin-top: 30px;
+#informacoes section {
+	margin-right: 50px;
+	margin-top: 15px;
+	color: white;
+	font-size: 1.3em;
+	margin-left: 20px;
+}
+
+#informacoes .formacoes {
+	width: 450px;
+}
+
+#informacoes .skills {
+	width: 300px;
+}
+
+/*
+cyan
+dark-cyan
+gold
+*/
+#informacoes h2 {
+	color: gold;
+}
+
+#informacoes ul {
+	display: block;
+    margin-inline-start: 2.3em;
+    margin-inline-end: 1em;
+    padding-inline-start: 10px;
+	list-style-type: circle;
+}
+
+#informacoes ul li {
+	margin-top: 1em;
 }
 
 /*
@@ -139,20 +178,25 @@ PORTFÓLIO
 
 #portfolio {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	justify-content: center;
 	padding-top: 20px;
+}
+
+#portfolio div {
+	width: 550px;
+	height: 300px;
+	background-color: floralwhite;
+	border: 1px solid rgba(0,0,0,.125);
+    border-radius: 2rem;
+}
+
+#portfolio div h3 {
+	margin-top: 146px;
 }
 
 #portfolio h2 {
 	font-size: 40px;
 	margin-bottom: 20px;
-}
-
-#portfolio h3 {
-	margin-top: 30px;
-	margin-bottom: 20px;
-	font-size: 25px;
 }
 
 #portfolio img {
@@ -182,11 +226,31 @@ footer {
 	color: #f1f1f1;
 }
 
+footer ul {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+a {
+	color: darkcyan;
+}
+
+a:link{ 
+	text-decoration: none;
+}
+
+#topo {
+	color: white;
+}
+
+
 /*
 MEDIA QUERIES
 */
 
-@media screen and (min-width: 1000px) {
+/* Corrigir */
+@media screen and (min-width: 768px) {
 	/* 
 	Herdas as outras propriedades.
 
@@ -225,10 +289,10 @@ MEDIA QUERIES
 	}
 
 	/*
-	SERVIÇOS
+	Skills
 	*/
 
-	#servicos {
+	#skills {
 		flex-direction:  row;
 		flex-wrap: wrap;
 		align-items: flex-start;
@@ -236,12 +300,12 @@ MEDIA QUERIES
 		margin: 0 auto;
 	}
 
-	#servicos h2 {
+	#skills h2 {
 		text-align: center;
 		width: 100%;
 	}
 
-	#servicos div {
+	#skills div {
 		flex-grow: 1;
 		flex-basis: 150px;
 		padding: 0 10px;

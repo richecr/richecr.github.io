@@ -6,93 +6,98 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Roboto+Slab" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalise.css">
 	<link rel="stylesheet" href="css/estilos.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Icons--> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
 </head>
 
-<body>
+<body style="margin-left: 0px;">
 
-<section id="inicio">
-	<nav>
-		<a href="#">Rich Elton</a>
-		<ul>
-			<li><a href="#sobre">SOBRE</a></li>
-			<li><a href="#servicos">SERVIÇOS</a></li>
-			<li><a href="#portfolio">PORTFÓLIO</a></li>
-			<li><a href="#contato">CONTATO</a></li>
-		</ul>
-	</nav>
-</section>
+	<div id="nav" style="width: 0px;">
+		<a href="javascript:void(0)" class="btnFechar" onclick="fecharNavegação()">×</a>	
+		<a href="#inicio" onclick="fecharNavegação()" class="current">Home</a>
+		<a href="#sobre" onclick="fecharNavegação()" class="current">Sobre</a>
+		<a href="#informacoes" onclick="fecharNavegação()" class="current">Informações</a>
+		<a href="#portfolio" onclick="fecharNavegação()" class="current">Portfólio</a>
+		<a href="#contato" onclick="fecharNavegação()" class="current">Contato</a>
+		
+	</div>
+	<span id="navButton" onclick="abrirNavegacao()" style="opacity: 100;">☰</span>
+
+	<script>
+		function abrirNavegacao(){
+			document.getElementById("nav").style.width = "250px";
+			document.body.style.marginLeft = "250px";
+			document.getElementById("navButton").style.opacity = 0;
+		}
+		function fecharNavegação(){
+			document.getElementById("nav").style.width = "0px";
+			document.body.style.marginLeft = "0";
+			document.getElementById("navButton").style.opacity = 100;
+		}
+	</script>
 	
-
-	<header>
+	<header id="inicio">
 		<h1>Rich Elton</h1>
-		<p>Descrição</p>
+		<br>
+		<div class="redes">
+			<a href="https://github.com/rickecr"><i class="fab fa-github fa-2x"></i></a>
+			<a href="https://twitter.com/rick_ramalho" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+			<a href="mailto:richelton14@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+			<a href="https://www.linkedin.com/in/rich-ramalho/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+		</div>
+		<br>
+		<br>
 		<a href="#sobre" class="botao">Ver mais</a>
 	</header>
-
+	
 	<section id="sobre">
-		<h2>Sobre</h2>
-		<p>Descrição</p>
-		<a href="#contato" class="botao">Entre em contato</a>
+			<h2>Sobre</h2>
+			<p>Gosto de desenvolver, de aprender coisas novas e principalmente resolver problemas.</p>
+			<a href="#contato" class="botao">Entre em contato</a>
 	</section>
 
-	<section id="servicos">
-		<h2>Serviços</h2>
-		<div>
-			<img src="img/Capa-Xamarin.png" alt="Xamarin, mobile">
-			<h3>Aplicativos Mobiles</h3>
-			<p>Quer um aplicativo que facilite a comunicação entre sua empresa e o cliente, trazer mais facilidade ao seu clinete e quer fazer isso atraves de um aplicativo mobile ? O que está esperando entre em contato.</p>
-		</div>
-		<div>
-			<img src="img/sites.png" alt="projeto">
-			<h3>Sites</h3>
-			<p>Você quer criar um site para sua empresa, e que seja responsivo usando uma tecnologia atual do mercado ? O que está esperando entre em contato.</p>
-		</div>
-		<div>
-			<img src="img/unity3d.png" alt="Unity, jogos 2D">
-			<h3>Jogos 2D Com Unity</h3>
-			<p>Teve a ideia de um jogo e precisa de ajuda na parte de programação ? Entre em contato.</p>
-		</div>
-		<div>
-			<img id="imgCor" src="img/coracao.jpg" alt="coração">
-			<h3 id="imgCoracao">Faça seus projetos com coração</h3>
-			<p>É melhor fazer seus sites, jogos e apps com amor, e assim ele será muito melhor.</p>
-		</div>
-	</section>
+	<div id="informacoes">		
+		<section class="skills">
+				<h2>Skills</h2>
+				<ul>
+					<li>NodeJS</li>
+					<li>JavaScript</li>
+					<li>Python</li>
+					<li>C#</li>
+					<li>Java</li>
+					<li>React</li>
+					<li>Unity3D</li>
+					<li>Android</li>
+				</ul>
+				
+		</section>
+
+		<section class="formacoes" >
+				<h2>Formações</h2>
+				<ul>
+					<li>Graduando em Ciência da Computação na UFCG - Universidade Federal de Campina Grande. 2017-2022</li>
+					<li>Ensino médio na ETSC - Escola Técnica de Saúde de Cajazeiras. 2014-2016</li>
+				</ul>
+		</section>
+
+		
+	</div>
 
 	<section id="portfolio">
 		<h2>PORTFÓLIO</h2>
-		<h3>Jogo do MegaMan</h3>
-		<img src="img/megaman1.png" alt="megaman1">
-		<img src="img/megaman2.png" alt="megaman2">
-		<img src="img/megaman4.png" alt="megaman4">
-		<img src="img/megaman3.png" alt="megaman3">
-
-		<h3>Aplicativo Lavadora</h3>
-		<img src="img/lavadora1.jpg" alt="lavadora1">
-		<img src="img/lavadora2.jpg" alt="lavadora2">
-		<img src="img/lavadora3.jpg" alt="lavadora3">
-		<img src="img/lavadora4.jpg" alt="lavadora4">
-
-		<h3>Aplicativo App Math</h3>
-		<img src="img/math1.jpeg" alt="math1">
-		<img src="img/math2.jpeg" alt="math2">
-		<img src="img/math3.jpeg" alt="math3">
-		<img src="img/math4.jpeg" alt="math4">
-		<img src="img/math5.jpeg" alt="math5">
-		<img src="img/math6.jpeg" alt="math6">
-		<img src="img/math7.jpeg" alt="math7">
-
-		<h3>Aplicativo App Salão</h3>
-		<img src="img/salao1.jpeg" alt="salao1">
-		<img src="img/salao2.jpeg" alt="salao2">
-		<img src="img/salao3.jpeg" alt="salao3">
-		<img src="img/salao4.jpeg" alt="salao4">
-		<img src="img/salao5.jpeg" alt="salao5">
+		<div>
+				<h3>Em construção!!!</h3>
+		</div>
+		<!--- Em construção novamente.-->
 	</section>
 
 	<section id="contato">
 		<h2>CONTATO</h2>
-		<p>Entre em contato conosco.</p>
+		<p>Entre em contato.</p>
 		<div>
 			<img src="img/phone-icon-md.png" alt="fone">
 			<p><a href="https://github.com/Rickecr"> Meu GitHub</a></p>
@@ -102,13 +107,10 @@
 	</section>
 
 	<footer>
-	<nav>
 		<ul>
 			<li><p>Desenvolvido por Rich Elton.</p></li>
-			<li><a href="#inicio">TOPO</a></li>
+			<li><a id="topo" href="#inicio" target="_blank">TOPO</a></li>
 		</ul>
-	</nav>
-		
 	</footer>
 
 </body>
