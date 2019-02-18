@@ -186,7 +186,7 @@ footer {
 MEDIA QUERIES
 */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
 	/* 
 	Herdas as outras propriedades.
 
