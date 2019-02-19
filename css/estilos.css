@@ -131,8 +131,7 @@ INFORMAÇÕES
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	background-color: #373B44;
-	border: 1px solid #ccc;
+	background-color: rgb(2, 245, 204);
 }
 
 #informacoes section {
@@ -152,12 +151,11 @@ INFORMAÇÕES
 }
 
 /*
-cyan
-dark-cyan
-gold
+darkviolet
+goldenrod
 */
 #informacoes h2 {
-	color: gold;
+	color: goldenrod;
 }
 
 #informacoes ul {
@@ -170,19 +168,20 @@ gold
 
 #informacoes ul li {
 	margin-top: 1em;
+	color: black;
 }
 
 /*
 PORTFÓLIO
 */
 
-#portfolio {
+#projetos {
 	display: flex;
 	justify-content: center;
 	padding-top: 20px;
 }
 
-#portfolio div {
+#projetos div {
 	width: 550px;
 	height: 300px;
 	background-color: floralwhite;
@@ -190,16 +189,16 @@ PORTFÓLIO
     border-radius: 2rem;
 }
 
-#portfolio div h3 {
+#projetos div h3 {
 	margin-top: 146px;
 }
 
-#portfolio h2 {
+#projetos h2 {
 	font-size: 40px;
 	margin-bottom: 20px;
 }
 
-#portfolio img {
+#projetos img {
 	width: 100%;
 }
 
@@ -319,23 +318,23 @@ MEDIA QUERIES
 	PORTFÓLIO
 	*/
 
-	#portfolio {
+	#projetos {
 		flex-direction: row;
 		/*Quebra de linhas. */
 		flex-wrap: wrap;
 	}
 
-	#portfolio h2 {
+	#projetos h2 {
 		width: 100%;
 		text-align: center;
 	}
 
-	#portfolio h3 {
+	#projetos h3 {
 		width: 100%;
 		text-align: center;
 	}
 
-	#portfolio img {
+	#projetos img {
 		margin-left: 50px;
 		padding: 5px;
 		width: 20%;
