@@ -2,7 +2,7 @@
 GERAL
 */
 body {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: #4d4d4d;
 	transition: margin-left .5s;
     transition-property: margin-left;
@@ -37,7 +37,7 @@ NAVEGAÇÂO
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #333652;
+    background-color: rgb(255, 255, 255);;
     overflow-x: hidden;
     padding-top: 60px;
 	transition: 0.5s;
@@ -59,7 +59,7 @@ NAVEGAÇÂO
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #90ADC6;
+    color: rgb(212, 18, 18);;
     display: block;
     transition: 0.3s;
 }
@@ -76,12 +76,17 @@ NAVEGAÇÂO
 CABEÇALHO
 */
 
-header {
+/*header {
 	background-image: url('../img/fundo.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	color: #f1f1f1;
+	
+}*/
+
+header {
+	background-color: rgb(143, 151, 151);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -91,12 +96,20 @@ header {
 
 header a {
 	padding: 10px;
-	color: cyan;
+	color: rgb(212, 18, 18);
     transition: all 0.3s;
     transition-property: all;
     transition-duration: 0.3s;
     transition-timing-function: ease;
     transition-delay: 0s;
+}
+
+header h1 {
+	color: white;
+}
+
+header .botao {
+	background-color: rgb(212, 18, 18);
 }
 
 /*
@@ -109,7 +122,7 @@ SOBRE
 	align-items: center;
 	text-align: center;
 	padding: 0 20px 20px;
-	background-color: #8f3faf;
+	background-color: rgb(212, 18, 18);
 	color: #f1f1f1;
 }
 
@@ -131,7 +144,6 @@ INFORMAÇÕES
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	background-color: rgb(2, 245, 204);
 }
 
 #informacoes section {
@@ -252,7 +264,6 @@ MEDIA QUERIES
 @media screen and (min-width: 768px) {
 	/* 
 	Herdas as outras propriedades.
-
 	NAVEGAÇÃO
 	*/
 	nav {
