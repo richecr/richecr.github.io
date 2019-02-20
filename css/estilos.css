@@ -76,15 +76,6 @@ NAVEGAÇÂO
 CABEÇALHO
 */
 
-/*header {
-	background-image: url('../img/fundo.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	color: #f1f1f1;
-	
-}*/
-
 header {
 	background-color: rgb(143, 151, 151);
 	display: flex;
@@ -167,7 +158,7 @@ darkviolet
 goldenrod
 */
 #informacoes h2 {
-	color: goldenrod;
+	color: rgb(143, 151, 151);
 }
 
 #informacoes ul {
@@ -189,14 +180,16 @@ PORTFÓLIO
 
 #projetos {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	text-align: center;
 	padding-top: 20px;
 }
 
 #projetos div {
 	width: 550px;
 	height: 300px;
-	background-color: floralwhite;
+	background-color: rgb(212, 18, 18);
 	border: 1px solid rgba(0,0,0,.125);
     border-radius: 2rem;
 }
@@ -208,6 +201,7 @@ PORTFÓLIO
 #projetos h2 {
 	font-size: 40px;
 	margin-bottom: 20px;
+	color: rgb(143, 151, 151);
 }
 
 #projetos img {
@@ -244,7 +238,7 @@ footer ul {
 }
 
 a {
-	color: darkcyan;
+	color: rgb(143, 151, 151);;
 }
 
 a:link{ 
@@ -331,7 +325,6 @@ MEDIA QUERIES
 
 	#projetos {
 		flex-direction: row;
-		/*Quebra de linhas. */
 		flex-wrap: wrap;
 	}
 
