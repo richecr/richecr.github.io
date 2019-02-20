@@ -2,8 +2,7 @@
 GERAL
 */
 body {
-	font-family: 'Open Sans', sans-serif;
-	color: #4d4d4d;
+	font-family: 'Quattrocento', serif;
 	transition: margin-left .5s;
     transition-property: margin-left;
     transition-duration: 0.5s;
@@ -13,8 +12,8 @@ body {
 
 h1, h2, h3 {
 	margin: 0;
-	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 	font-weight: 700;
+	font-size: 50px;
 }
 
 .botao {
@@ -97,6 +96,7 @@ header a {
 
 header h1 {
 	color: white;
+	font-size: 90px;
 }
 
 header .botao {
@@ -120,6 +120,7 @@ SOBRE
 #sobre p {
 	margin-bottom: 2.5em;
 	max-width: 1000px;
+	font-size: 25px;
 }
 
 #sobre .botao {
@@ -194,8 +195,9 @@ PORTFÓLIO
     border-radius: 2rem;
 }
 
-#projetos div h3 {
+#projetos div h4 {
 	margin-top: 146px;
+	font-size: 25px;
 }
 
 #projetos h2 {
