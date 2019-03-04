@@ -112,7 +112,7 @@ SOBRE
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	padding: 0 20px 20px;
+	padding: 20px 20px 20px;
 	background-color: rgb(212, 18, 18);
 	color: #f1f1f1;
 }
@@ -227,15 +227,15 @@ FOOTER
 */
 
 footer {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
-	padding: 10px;
-	background-color: #4d4d4d;
+	background-color: rgb(143, 151, 151);
 	color: #f1f1f1;
 }
 
 footer ul {
-	display: flex;
-	justify-content: space-between;
+	
 	list-style-type: none;
 }
 
@@ -257,41 +257,28 @@ MEDIA QUERIES
 */
 
 /* Corrigir */
-@media screen and (min-width: 768px) {
-	/* 
-	Herdas as outras propriedades.
-	NAVEGAÇÃO
-	*/
-	nav {
-		flex-direction: row;
-		justify-content: space-around;
-	}
-	
-	nav ul {
-		flex-direction: row;
-		width: 70%;
-	}
-	
+@media (max-width: 830px) {
 	/*
 	CABEÇALHO
 	*/
-
 	header {
-		height: 600px;
-		height: 60vh;
+		display: flex;
 		justify-content: center;
+		flex-direction: column;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 
 	/*
 	SOBRE
 	*/
-
 	#sobre {
-		height: 250px;
-		height: 30vh;
+		display: flex;
 		justify-content: center;
-		/*Se a tela for maior ele expandi, se diminuir ele expandi até o limite definido. */
-		min-height: 250px;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 
 	/*
@@ -299,11 +286,10 @@ MEDIA QUERIES
 	*/
 
 	#skills {
-		flex-direction:  row;
+		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: flex-start;
-		max-width: 1500px;
-		margin: 0 auto;
 	}
 
 	#skills h2 {
@@ -324,10 +310,11 @@ MEDIA QUERIES
 	/*
 	PORTFÓLIO
 	*/
-
 	#projetos {
+		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		align-items: flex-start;
 	}
 
 	#projetos h2 {
@@ -344,22 +331,5 @@ MEDIA QUERIES
 		margin-left: 50px;
 		padding: 5px;
 		width: 20%;
-	}
-
-	/*
-	CONTATO
-	*/
-
-	#contato {
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		max-width: 500px;
-		margin: 0 auto;
-	}
-
-	#contato h2,
-	#contato p {
-		width: 100%;
 	}
 }
