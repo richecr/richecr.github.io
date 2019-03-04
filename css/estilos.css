@@ -2,6 +2,7 @@
 GERAL
 */
 body {
+	margin: 0;
 	font-family: 'Quattrocento', serif;
 	transition: margin-left .5s;
     transition-property: margin-left;
@@ -67,7 +68,7 @@ NAVEGAÇÂO
 	padding: 10px;
 	font-size: 36px;
     cursor: pointer;
-    color: white;
+    color: black;
     position: fixed;
 }
 
@@ -182,9 +183,8 @@ PORTFÓLIO
 #projetos {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-	padding-top: 20px;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
 #projetos div {
@@ -192,11 +192,14 @@ PORTFÓLIO
 	height: 300px;
 	background-color: rgb(212, 18, 18);
 	border: 1px solid rgba(0,0,0,.125);
-    border-radius: 2rem;
+	border-radius: 2rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 #projetos div h4 {
-	margin-top: 146px;
+	text-align: center;
 	font-size: 25px;
 }
 
