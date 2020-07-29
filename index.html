@@ -1,116 +1,180 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Rich Elton</title>
-	<link rel="stylesheet" href="css/estilos.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Rich Elton</title>
+    <link rel="stylesheet" href="css/estilos.css" />
 
-	<link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!-- Icons--> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css?family=Quattrocento"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <!-- Icons-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+    <header id="inicio">
+      <h1>Rich Elton</h1>
+      <br />
+      <div class="social-links">
+        <a href="https://github.com/richecr" target="_blank">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://twitter.com/rickzinho_ecr" target="_blank">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="mailto:richelton14@gmail.com" target="_blank">
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rich-ramalho/" target="_blank">
+          <i class="fab fa-linkedin-in fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/rickelton.py/" target="_blank">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </div>
+    </header>
 
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <div id="div-sobre">
+        <p>
+          Meu nome é Rich Ramalho, de Campina Grande, Paraíba, Brasil. Sou aluno
+          do curso de Ciência da Computação na UFCG, atualmente estou no 6º
+          período.
+        </p>
+        <p>
+          Atualmente sou desenvolvedor no Laboratório de Sistemas de Informação,
+          onde atuo com React, Spring, Clojure e banco SAP HANA.
+        </p>
+        <p>
+          Sou entusiasmado com projetos Open Source. Amo aprender coisas novas,
+          resolver problemas e utilizar tudo para ajudar a tornar o mundo um
+          lugar melhor.
+        </p>
+        <p>
+          Também amo jogar principalmente jogos do estilo FPS(csgo, R6,
+          valorant), RPG(The Witcher 3) e de sobrevivência(Don't Starve) entre
+          outros estilos.
+        </p>
+      </div>
+    </section>
 
-</head>
+    <div id="informacoes">
+      <section class="formacoes">
+        <h2>Formações</h2>
+        <ul>
+          <li>
+            <span>
+              Graduando em Ciência da Computação na UFCG - Universidade Federal
+              de Campina Grande. 2017-2022
+            </span>
+          </li>
+          <li>
+            <span>
+              Ensino médio na ETSC - Escola Técnica de Saúde de Cajazeiras.
+              2014-2016
+            </span>
+          </li>
+        </ul>
+      </section>
 
-<body style="margin-left: 0px;">
+      <section class="skills">
+        <h2>Skills</h2>
+        <div class="div-skills">
+          <ul>
+            <li><span>Python</span></li>
+            <li><span>NodeJS</span></li>
+            <li><span>JavaScript</span></li>
+            <li><span>React</span></li>
+          </ul>
+          <ul>
+            <li><span>Java</span></li>
+            <li><span>Clojure</span></li>
+            <li><span>Unity3D com C#</span></li>
+            <li><span>Android</span></li>
+          </ul>
+        </div>
+      </section>
+    </div>
 
-	<div id="nav" style="width: 0px;">
-		<a href="javascript:void(0)" class="btnFechar" onclick="fecharNavegação()">×</a>	
-		<a href="#inicio" onclick="fecharNavegação()" class="current">Home</a>
-		<a href="#sobre" onclick="fecharNavegação()" class="current">Sobre</a>
-		<a href="#informacoes" onclick="fecharNavegação()" class="current">Informações</a>
-		<a href="#projetos" onclick="fecharNavegação()" class="current">Portfólio</a>
-		<a href="#contato" onclick="fecharNavegação()" class="current">Contato</a>
-		
-	</div>
-	<span id="navButton" onclick="abrirNavegacao()" style="opacity: 100;">☰</span>
+    <section class="github-stats">
+      <h2>GitHub Stats</h2>
+      <div>
+        <img src="https://github-readme-stats.vercel.app/api?username=richecr&show_icons=true&theme=dark&&text_color=ffffff" alt="rickecr" />
+      </div>
+    </section>
 
-	<script>
-		function abrirNavegacao(){
-			document.getElementById("nav").style.width = "250px";
-			//document.body.style.marginLeft = "250px";
-			document.getElementById("navButton").style.opacity = 0;
-		}
-		function fecharNavegação(){
-			document.getElementById("nav").style.width = "0px";
-			document.body.style.marginLeft = "0";
-			document.getElementById("navButton").style.opacity = 100;
-		}
-	</script>
-	
-	<header id="inicio">
-		<h1>Rich Elton</h1>
-		<br>
-		<div class="redes">
-			<a href="https://github.com/rickecr"><i class="fab fa-github fa-2x"></i></a>
-			<a href="https://twitter.com/rick_ramalho" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-			<a href="mailto:richelton14@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
-			<a href="https://www.linkedin.com/in/rich-ramalho/"><i class="fab fa-linkedin-in fa-2x"></i></a>
-		</div>
-		<br>
-		<br>
-		<a href="#sobre" class="botao">Ver mais</a>
-	</header>
-	
-	<section id="sobre">
-			<h2>Sobre</h2>
-			<p>Amo desenvolver, aprender coisas novas, resolver problemas e utilizar tudo para ajudar a tornar o mundo um lugar melhor.</p>
-	</section>
+    <section id="projetos">
+      <h2>Projetos Pessoais</h2>
+      <div class="meus-projetos">
+        <div>
+          <a href="https://github.com/richecr/CamaraDosDeputados">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=richecr&repo=CamaraDosDeputados&theme=dark&text_color=ffffff" alt="Projeto Camara dos deputados" />
+          </a>
+        </div>
+        <div>
+          <a href="https://github.com/richecr/PyElit">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=richecr&repo=PyElit&theme=dark&text_color=ffffff" alt="Projeto PyElit" />
+          </a>
+        </div>
+        <div>
+          <a href="https://github.com/richecr/PyGraph">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=richecr&repo=PyGraph&theme=dark&text_color=ffffff" alt="Projeto PyGraph" />
+          </a>
+        </div>
+        <div>
+          <a href="https://github.com/richecr/PyTwitterSDK">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=richecr&repo=PyTwitterSDK&theme=dark&text_color=ffffff" alt="Projeto PyTwitterSDK" />
+          </a>
+        </div>
+        <div>
+          <a href="https://github.com/richecr/happy_download">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=richecr&repo=happy_download&theme=dark&text_color=ffffff" alt="Projeto bot happy download" />
+          </a>
+        </div>
+        <div>
+          <a href="https://github.com/richecr/rn-multiple-select">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=richecr&repo=rn-multiple-select&theme=dark&text_color=ffffff" alt="Projeto rn-multiple-select" />
+          </a>
+        </div>
+      </div>
+    </section>
 
-	<div id="informacoes">		
-		<section class="skills">
-				<h2>Skills</h2>
-				<ul>
-					<li>NodeJS</li>
-					<li>JavaScript</li>
-					<li>Python</li>
-					<li>C#</li>
-					<li>Java</li>
-					<li>React</li>
-					<li>Unity3D</li>
-					<li>Android</li>
-				</ul>
-				
-		</section>
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Entre em contato.</p>
+      <div>
+        <img src="img/phone-icon-md.png" alt="fone" />
+        <p><a href="https://github.com/Rickecr"> Meu GitHub</a></p>
+        <p>
+          <a href="mailto:rich.ramalho@ccc.ufcg.edu.br">
+            rich.ramalho@ccc.ufcg.edu.br
+          </a>
+        </p>
+      </div>
+    </section>
 
-		<section class="formacoes" >
-				<h2>Formações</h2>
-				<ul>
-					<li>Graduando em Ciência da Computação na UFCG - Universidade Federal de Campina Grande. 2017-2022</li>
-					<li>Ensino médio na ETSC - Escola Técnica de Saúde de Cajazeiras. 2014-2016</li>
-				</ul>
-		</section>
-
-		
-	</div>
-
-	<section id="projetos">
-		<h2>Meus projetos</h2>
-		<div>
-				<h4>Em construção!!!</h4>
-		</div>
-		<!--- Em construção novamente.-->
-	</section>
-
-	<section id="contato">
-		<h2>CONTATO</h2>
-		<p>Entre em contato.</p>
-		<div>
-			<img src="img/phone-icon-md.png" alt="fone">
-			<p><a href="https://github.com/Rickecr"> Meu GitHub</a></p>
-			<p><a href="tel:83998413386">(83) 99841-3386</a></p>
-			<p><a href="mailto:rich.ramalho@ccc.ufcg.edu.br">rich.ramalho@ccc.ufcg.edu.br</a></p>
-		</div>
-	</section>
-
-	<footer id="footer">
-		<ul>
-			<li class="li"><p>Desenvolvido por Rich Elton.</p></li>
-			<li class="li"><a id="topo" href="#inicio" >TOPO</a></li>
-		</ul>
-	</footer>
-
-</body>
+    <footer id="footer">
+      <ul>
+        <li class="li"><p>Desenvolvido por Rich Elton.</p></li>
+        <li class="li"><a id="topo" href="#inicio">TOPO</a></li>
+      </ul>
+    </footer>
+  </body>
 </html>
