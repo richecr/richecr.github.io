@@ -274,13 +274,15 @@ FOOTER
 footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   background-color: rgb(143, 151, 151);
   color: #f1f1f1;
+  height: 100px;
 }
 
-footer ul {
-  list-style-type: none;
+footer span {
+  font-size: 24px;
 }
 
 a {
@@ -399,5 +401,10 @@ MEDIA QUERIES
   .meus-projetos div {
     display: flex;
     justify-content: center;
+  }
+
+  footer {
+    width: 100%;
+    padding: 20px 20px 20px;
   }
 }
