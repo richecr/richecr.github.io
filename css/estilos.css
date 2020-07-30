@@ -231,15 +231,14 @@ goldenrod
 /*
 PORTFÓLIO
 */
-
-#projetos {
+.projetos {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 }
 
-#projetos h2 {
+.projetos h2 {
   color: rgb(143, 151, 151);
 }
 
@@ -248,7 +247,7 @@ PORTFÓLIO
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  width: 1200px;
+  width: 80%;
 }
 
 .meus-projetos * {
@@ -311,6 +310,22 @@ MEDIA QUERIES
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 50px;
+    width: 100%;
+  }
+
+  .social-links a {
+    font-size: 1.5rem;
+  }
+
+  #div-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  #div-sobre p {
+    font-size: 23px;
   }
 
   /*
@@ -319,10 +334,12 @@ MEDIA QUERIES
   #sobre {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     padding-top: 50px;
     padding-bottom: 50px;
+    height: 100%;
+    width: 100%;
   }
 
   /*
@@ -351,29 +368,36 @@ MEDIA QUERIES
     margin-top: 90px;
   }
 
+  .github-stats {
+    padding: 20px 20px 20px;
+    width: 100%;
+  }
+
+  .github-stats img {
+    width: 80%;
+  }
+
+  .github-stats div {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  .projetos {
+    width: 100%;
+    padding: 20px 20px 20px;
+  }
+
   /*
 	PORTFÓLIO
 	*/
-  #projetos {
+  .meus-projetos * {
+    padding-right: 0px;
+    margin-top: 0px;
+  }
+
+  .meus-projetos div {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-
-  #projetos h2 {
-    width: 100%;
-    text-align: center;
-  }
-
-  #projetos h3 {
-    width: 100%;
-    text-align: center;
-  }
-
-  #projetos img {
-    margin-left: 50px;
-    padding: 5px;
-    width: 20%;
+    justify-content: center;
   }
 }
