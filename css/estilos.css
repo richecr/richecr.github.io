@@ -408,3 +408,10 @@ MEDIA QUERIES
     padding: 20px 20px 20px;
   }
 }
+
+/* Corrigir */
+@media (max-width: 350px) {
+  body {
+    width: 360px;
+  }
+}
